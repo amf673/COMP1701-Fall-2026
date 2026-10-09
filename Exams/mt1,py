@@ -1,0 +1,38 @@
+
+# COMP 1701 Midterm 1
+#
+# VO2 Max using the Heart rate ratio method
+# 
+
+HR_RATIO_CONSTANT = 14.5
+HR_RATIO_SEX_CONSTANT = 0.8
+
+def hrmin( hr15: int) -> int:
+    """ Return the beats per minute given the beats per
+    15 seconds. """
+    
+    return hr15 * 4
+
+
+def vo2_max( maxhr:int, resthr:int, sex:int) -> float:
+    """ Reutrn the VO2 max using the heart rate ration method. """
+    
+    ratio = maxhr / resthr
+    
+    return ratio * ( HR_RATIO_CONSTANT + (sex * HR_RATIO_SEX_CONSTANT)) 
+
+
+def main():
+    
+    name = input( "Enter name: ")
+    sex = int( input( f" What sex is {name} (1 male, 0 female):"))
+    resting_15 = int( input( "What is {name}'s resting beats per 15 sec): "))
+    max_15 = int( input( "What is {name}'s max hear rate beats per 15 sec: "))
+    
+    vo2 = vo2_max( hrmin(max_15), hrmin(resting_15), sex) 
+    
+    print()
+    print( f"{name}'s V02 max is estimated to be {vo2:.1f} using the heart rate ratio formula.") 
+                      
+    
+main()
