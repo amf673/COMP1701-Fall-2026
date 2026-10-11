@@ -39,7 +39,7 @@ def area_diameter( diameter:float) -> float:
 def cake_time( temperature:int, diameter:float) -> float: 
     """ return the baking time for a cake of size diameter and oven temp temperature"""
 
-    time = CCS_CONSTANT + (OVEN_TEMP_CONST * ( area( diameter) - area( BASE_CAKE_SIZE))) / ( 2 * temperature)
+    time = CCS_CONSTANT + (OVEN_TEMP_CONST * ( area_diameter( diameter) - area_diameter( BASE_CAKE_SIZE))) / ( 2 * temperature)
     
     # round the result of from above to the nearest 5 minutes.
     return round_5( time)
