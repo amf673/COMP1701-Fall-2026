@@ -55,37 +55,7 @@ def main():
     print( f"Your cake should take about {bake_time} minutes to bake.")
 
 
-def testing():
-    """ Does some testing of a variety of cases. """
-    
-    temp = 350.0
-    cake_size = 6.0
-    expect = 20.0
-    bake_time = cake_time 
-    print( f"expected - calculated = {expect-bake_time(temp, cake_size)}")
-
-    temp = 350.0
-    cake_size = 10.0
-    expect = 45.0
-    bake_time = cake_time 
-    print( f"expected - calculated = {expect-bake_time(temp, cake_size)}")
-
-    temp = 400.0
-    cake_size = 11.5
-    expect = 55.0
-    bake_time = cake_time 
-    print( f"expected - calculated = {expect-bake_time(temp, cake_size)}")
-
-    temp = 400.0
-    cake_size = 8.5
-    expect = 30.0
-    bake_time = cake_time 
-    print( f"expected - calculated = {expect-bake_time(temp, cake_size)}")
-
-    print( area( 1), area_diameter( 2), area( 4))
-    print( round_n( 22, 5))
-    print( round_n( 24, 5))
-    print( round_5( 23))
+main()
     print( round_5( 41))
 
 main()
