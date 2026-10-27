@@ -1,9 +1,10 @@
-def check_free_delivery(amount: float) -> str:
+def check_free_delivery( amount: float) -> str:
     """
     Takes the total amount of the order and checks
     whether the order qualifies for free delivery.
     returns a string message.
     """    
+
 
 def main() -> None:
     """
@@ -12,5 +13,6 @@ def main() -> None:
     Prints an appropriate message based on whether the order qualifies
     for free delivery.
     """
+
 
 main()
