@@ -8,6 +8,7 @@ def abstract_decisions( a: bool, b: bool, c: bool) -> None:
     else:
         print( "expression is false")
 
+
 def main() -> None:
     abstract_decisions( False, True, True)
 
