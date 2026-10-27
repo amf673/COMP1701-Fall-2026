@@ -72,5 +72,5 @@ def main():
     else:
         print( "Computer WINS!")
                
-# main()
-testing()
+main()
+# testing()
