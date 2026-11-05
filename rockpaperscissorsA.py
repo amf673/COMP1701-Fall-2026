@@ -1,5 +1,5 @@
 #
-# Play a game of Rock-Paper-Scissors
+# Play multiple games of rock, paper, scissors 
 #
 # Alan
 # COMP 1701
@@ -65,7 +65,9 @@ def pp( p1:str, p2:str, res:bool)->None:
     """ convenience function """
     print( f"{p1:^8} {p2:^8} {res}")
 
+
 def testing():
+    """ just for testing, not part of the program """ 
     print( "PLAYER  COMPUTER  RESULT")
     print( "------------------------")
     pp( ROCK, PAPER, rps( ROCK, PAPER))
@@ -80,12 +82,12 @@ def testing():
     
 
 def testing2():
+    """ just for testing, not part of the program """ 
     print( comp_choice()) 
-
-# testing2()
 
 
 # def main():
+#     """ This version plays until done """ 
 #     # Play the game
 #     
 #     resp = input( "outside" + PROMPT) # resp is the loop control variable (LCV) 
@@ -101,7 +103,7 @@ def testing2():
 #
 
 def main():
-    # Play the game
+    # Play the game n times 
     
     n = int( input( "how many games? ")) # i is the loop control variable (LCV)
     i = 0
@@ -126,3 +128,4 @@ def main():
            
 main()
 # testing()
+# testing2() 
