@@ -1,1 +1,1 @@
-Code exmamples for COMP 1701 Section 003
+Code examples for COMP 1701 Section 003
