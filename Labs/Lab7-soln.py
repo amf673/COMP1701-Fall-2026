@@ -5,6 +5,7 @@
 # 
 # A. Fedoruk
 # 
+# Includes solutions with while loops and for loops
 
 
 
